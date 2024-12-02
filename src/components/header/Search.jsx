@@ -4,7 +4,7 @@ import { LocationContext } from "../../context";
 import { getLocationByName } from "../../data/location-data";
 
 const Search = () => {
-  const [searchTerm, setSearchTerm] = useState();
+  const [searchTerm, setSearchTerm] = useState("");
   const { setSelectedLocation } = useContext(LocationContext);
 
   const handleSubmit = (e) => {
