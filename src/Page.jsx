@@ -4,7 +4,7 @@ import WeatherBoard from "./components/weather/WeatherBoard";
 import { WeatherContext } from "./context";
 
 const Page = () => {
-  const { loading } = useContext(WeatherContext);
+  const { weatherData, loading } = useContext(WeatherContext);
 
   return (
     <>
