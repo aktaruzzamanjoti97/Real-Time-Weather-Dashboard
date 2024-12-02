@@ -11,7 +11,7 @@ const FavoriteListModal = () => {
         {favorites.length > 0 ? (
           favorites.map((fav) => (
             <li key={fav.location} className="hover:bg-gray-200">
-              {fav.location}
+              <a>{fav.location}</a>
             </li>
           ))
         ) : (
