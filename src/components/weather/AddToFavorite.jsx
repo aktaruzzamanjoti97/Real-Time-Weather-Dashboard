@@ -17,8 +17,11 @@ const AddToFavorite = () => {
 
   const handleFavorites = () => {
     const found = favorites?.find((f) => f.location === location);
-    if (!found) addToFavorites(latitude, longitude, location);
-    else removeFromFavorites(location);
+    if (!found) {
+      addToFavorites(latitude, longitude, location);
+    } else {
+      removeFromFavorites(location);
+    }
     setIsFavorite(!isFavorite);
   };
 
