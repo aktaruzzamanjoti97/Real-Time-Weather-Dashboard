@@ -1,6 +1,6 @@
 import { useContext } from "react";
+import CloudIcon from "../../assets/cloud.svg";
 import HazeCIcon from "../../assets/haze.svg";
-import CloudIcon from "../../assets/icons/cloud.svg";
 import SnowIcon from "../../assets/icons/snow.svg";
 import SunnyIcon from "../../assets/icons/sunny.svg";
 import PinIcon from "../../assets/pin.svg";
@@ -23,6 +23,8 @@ const WeatherHeadline = () => {
       case "Fog":
         return HazeCIcon;
       case "Haze":
+        return HazeCIcon;
+      case "Mist":
         return HazeCIcon;
       case "Snow":
         return SnowIcon;
